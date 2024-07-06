@@ -55,7 +55,7 @@ Node.js
 npm (Node Package Manager)
 Cloning the Repository
 
-git clone https://github.com/adrianhajdin/zoom-clone.git
+git clone:  https://github.com/arif6371/ZOOM_clone.git
 cd zoom-clone
 Installation
 
