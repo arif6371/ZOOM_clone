@@ -78,6 +78,8 @@ Replace the placeholder values with your actual Clerk & getstream credentials. Y
 
 Running the Project
 
+figma file for this zoom clone app:  https://www.figma.com/design/FSbYf8vm3wKN9cztXyt0sp/Zoom-Clone?node-id=0-1
+
 npm run dev
 Open http://localhost:3000 in your browser to view the project.
 
