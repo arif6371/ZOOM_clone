@@ -2,9 +2,15 @@ import MeetingTypeList from '@/components/MeetingTypeList';
 
 const Home = () => {
   const now = new Date();
+  
+  // Convert to IST time by adding the offset (if your system time is not in IST)
+  // const offset = now.getTimezoneOffset() * 60000;
+  // const ISTOffset = 5.5 * 60 * 1000; // IST offset UTC +5.5 hours
+  // const istNow = new Date(now.getTime() + ISTOffset - offset);
+  const istNow = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
 
-  const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-  const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full' })).format(now);
+  const time = istNow.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' });
+  const date = (new Intl.DateTimeFormat('en-IN', { dateStyle: 'full' })).format(istNow);
 
   return (
     <section className="flex size-full flex-col gap-5 text-white">
@@ -26,3 +32,4 @@ const Home = () => {
 };
 
 export default Home;
+
